@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23 /* DailyLaunchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15 /* DailyLaunchApp.swift */; };
+		24 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16 /* Models.swift */; };
+		25 /* DailyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17 /* DailyStore.swift */; };
+		26 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18 /* NotificationService.swift */; };
+		27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19 /* ContentView.swift */; };
+		28 /* PlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20 /* PlannerView.swift */; };
+		30 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29 /* SettingsView.swift */; };
+		422F414F308A569D00AE8812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422F414E308A569D00AE8812 /* Assets.xcassets */; };
+		422F4151308A56C800AE8812 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 422F4150308A56C800AE8812 /* AppIcon.icon */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10 /* DailyLaunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLaunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15 /* DailyLaunchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLaunchApp.swift; sourceTree = "<group>"; };
+		16 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		17 /* DailyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStore.swift; sourceTree = "<group>"; };
+		18 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20 /* PlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>"; };
+		29 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		422F414E308A569D00AE8812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		422F4150308A56C800AE8812 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3 = {
+			isa = PBXGroup;
+			children = (
+				8 /* DailyLaunch */,
+				9 /* Frameworks */,
+				4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10 /* DailyLaunch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8 /* DailyLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				15 /* DailyLaunchApp.swift */,
+				16 /* Models.swift */,
+				17 /* DailyStore.swift */,
+				18 /* NotificationService.swift */,
+				19 /* ContentView.swift */,
+				20 /* PlannerView.swift */,
+				29 /* SettingsView.swift */,
+				422F414E308A569D00AE8812 /* Assets.xcassets */,
+				422F4150308A56C800AE8812 /* AppIcon.icon */,
+			);
+			path = DailyLaunch;
+			sourceTree = "<group>";
+		};
+		9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5 /* DailyLaunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11 /* Build configuration list for PBXNativeTarget "DailyLaunch" */;
+			buildPhases = (
+				12 /* Sources */,
+				13 /* Frameworks */,
+				14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyLaunch;
+			productName = DailyLaunch;
+			productReference = 10 /* DailyLaunch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 2 /* Build configuration list for PBXProject "DailyLaunch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3;
+			productRefGroup = 4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5 /* DailyLaunch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422F414F308A569D00AE8812 /* Assets.xcassets in Resources */,
+				422F4151308A56C800AE8812 /* AppIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23 /* DailyLaunchApp.swift in Sources */,
+				24 /* Models.swift in Sources */,
+				25 /* DailyStore.swift in Sources */,
+				26 /* NotificationService.swift in Sources */,
+				27 /* ContentView.swift in Sources */,
+				28 /* PlannerView.swift in Sources */,
+				30 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				EXECUTABLE_NAME = DailyLaunch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DailyLaunch;
+				MARKETING_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_NAME = DailyLaunch;
+			};
+			name = Debug;
+		};
+		22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				EXECUTABLE_NAME = DailyLaunch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DailyLaunch;
+				MARKETING_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_NAME = DailyLaunch;
+			};
+			name = Release;
+		};
+		6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyLaunch;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DailyLaunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyLaunch;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DailyLaunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11 /* Build configuration list for PBXNativeTarget "DailyLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21 /* Debug */,
+				22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2 /* Build configuration list for PBXProject "DailyLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6 /* Debug */,
+				7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1 /* Project object */;
+}
