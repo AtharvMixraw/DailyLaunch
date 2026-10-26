@@ -11,6 +11,7 @@ DailyLaunch is a private, native Mac utility for planning daily work, attaching 
 - One-click task launch and “Open All” browser launch.
 - Tomorrow planning without modifying today’s work.
 - Local macOS reminders for tomorrow’s plan.
+- Global `⌘⌥D` capture shortcut for Safari and Chrome tabs.
 - Local JSON persistence with atomic writes.
 - No backend, account, analytics, subscription, or third-party service.
 
@@ -35,6 +36,12 @@ xcodebuild -project DailyLaunch.xcodeproj -scheme DailyLaunch \
 ```
 
 The project targets macOS 13 or newer.
+
+## Save the active browser tab
+
+With DailyLaunch running, press **⌘⌥D** from Safari or Google Chrome. DailyLaunch reads the frontmost tab’s title and URL, activates its save window, and pre-fills the task for tomorrow. Review the title, optionally add a description, then click **Save**.
+
+The first capture may prompt for macOS permissions. Allow DailyLaunch to control **System Events**, **Safari**, and/or **Google Chrome** in **System Settings → Privacy & Security → Automation**. The shortcut is registered while the app is running; V1 does not install a background login agent.
 
 ## Release management
 

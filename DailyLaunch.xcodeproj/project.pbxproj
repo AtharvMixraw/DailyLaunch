@@ -14,6 +14,7 @@
 		27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19 /* ContentView.swift */; };
 		28 /* PlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20 /* PlannerView.swift */; };
 		30 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29 /* SettingsView.swift */; };
+		31 /* CaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32 /* CaptureService.swift */; };
 		422F414F308A569D00AE8812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422F414E308A569D00AE8812 /* Assets.xcassets */; };
 		422F4151308A56C800AE8812 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 422F4150308A56C800AE8812 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20 /* PlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>"; };
 		29 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		32 /* CaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureService.swift; sourceTree = "<group>"; };
 		422F414E308A569D00AE8812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		422F4150308A56C800AE8812 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				19 /* ContentView.swift */,
 				20 /* PlannerView.swift */,
 				29 /* SettingsView.swift */,
+				32 /* CaptureService.swift */,
 				422F414E308A569D00AE8812 /* Assets.xcassets */,
 				422F4150308A56C800AE8812 /* AppIcon.icon */,
 			);
@@ -151,6 +154,7 @@
 				27 /* ContentView.swift in Sources */,
 				28 /* PlannerView.swift in Sources */,
 				30 /* SettingsView.swift in Sources */,
+				31 /* CaptureService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

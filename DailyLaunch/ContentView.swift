@@ -3,9 +3,11 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject private var store: DailyStore
     @EnvironmentObject private var notifications: NotificationService
+    @EnvironmentObject private var capture: CaptureService
     @State private var showingPlanner = false
     @State private var showingSettings = false
     @State private var errorMessage: String?
+    @State private var capturedTab: CapturedTab?
 
     var body: some View {
         NavigationSplitView {
@@ -20,8 +22,32 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showingPlanner) { PlannerView() }
         .sheet(isPresented: $showingSettings) { SettingsView() }
+        .sheet(item: $capturedTab) { tab in CaptureTaskView(tab: tab) }
+        .onReceive(NotificationCenter.default.publisher(for: CaptureService.capturedTabNotification)) { notification in
+            capturedTab = notification.object as? CapturedTab
+        }
         .alert("Unable to open URL", isPresented: Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })) { Button("OK") {} } message: { Text(errorMessage ?? "This URL is invalid.") }
     }
+}
+
+private struct CaptureTaskView: View {
+    @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var store: DailyStore
+    let tab: CapturedTab
+    @State private var title: String
+    @State private var details = ""
+    init(tab: CapturedTab) { self.tab = tab; _title = State(initialValue: tab.title) }
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("Save for Tomorrow").font(.title2.bold())
+            Text("The active browser tab is ready to save.").foregroundStyle(.secondary)
+            TextField("Task title", text: $title)
+            TextField("Description (optional)", text: $details)
+            LabeledContent("URL") { Text(tab.url).lineLimit(1).foregroundStyle(.secondary) }
+            HStack { Spacer(); Button("Cancel") { dismiss() }; Button("Save") { save() }.buttonStyle(.borderedProminent).disabled(title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) }
+        }.padding(24).frame(width: 500)
+    }
+    private func save() { var plan = store.tomorrow; plan.items.append(ActionItem(title: title.trimmingCharacters(in: .whitespacesAndNewlines), details: details, urlString: tab.url, order: plan.items.count)); store.save(plan); dismiss() }
 }
 
 struct DashboardView: View {
